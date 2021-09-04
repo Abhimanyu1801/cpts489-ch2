@@ -5,11 +5,57 @@
 <!-- Begin HEAD section of document. Here we set up things, define styles
 05: and/or import stylesheets. -->
 </head>
+<style>
+    #sideMenu{
+        background-color:darkblue;
+        color: #FFFFFF;
+        width: 30%;
+        height:100%; 
+        z-index: 200;
+        position: fixed;
+    
+    }
+    a:link {
+    color: white;
+    background-color:transparent;
+    text-decoration: none;
+    }
+
+    a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    #pageContent{
+        z-index: -1;
+    }
+</style>
 <body>
     <div id="sideMenu" class="side-menu">
-        <a class="menu-item" href="#">Menu Item 1</a>
-        <a class="menu-item" href="#">Menu Item 2</a>
-        <a class="menu-item" href="#">Menu Item 3</a>
+        <li>
+        <a class="menu-item" href="#"><b>Menu Item 1</b></a>
+        </li>
+        <br>
+        <li>
+        <a class="menu-item" href="#"><b>Menu Item 2</b></a>
+        </li>
+        <br>
+        <li>
+        <a class="menu-item" href="#"><b>Menu Item 3</b></a>
+        </li>
+        <br>
     </div>
     <div id="pageContent">
         <h1>Search Strategies for Finding CSS Styles</h1>
